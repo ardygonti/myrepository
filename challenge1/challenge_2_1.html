@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <Style>
+        body{
+            background-color: #e4e4e4;
+        }
+        .menu {
+            /* cara 2 ngilangin titik lanjutan s1 */
+            list-style: none;
+            /* menggeser menu ke kanan  */
+            float: right;
+            box-sizing: border-box;
+        }
+        .menu li {
+            /* cara 3 membuat sejajar posisi  */
+            float: left;
+            /* memberi jarak antar menu */
+            margin-right: 10px;
+        }
+        .menu li a {
+            /* memberi warna pada LI */
+            background-color: rgb(189, 189, 60);
+            /* memberi jarak antar menu //pading */
+            padding: 10px;
+            /* menghilangkan gari pada text */
+            text-decoration: none;
+            /* mengubah warna pada text */
+            color: white;
+        }
+        .content {
+            background-color: #ffffff;
+            /* dikasih float agar tidak menyatu dengan float pada class lainnya, sebelumnya dikasih widht  */
+            width: 100%;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .content  h3 {
+            color: rgb(89, 238, 89);
+        }
+        .footer {
+            float: right;
+            width: 100%;
+            box-sizing: border-box;
+            /* biar text ke kanan ditambah text align */
+            text-align: right;
+            margin-top: 10px;
+        }
+    </Style>
+</head>
+<body>
+    <!-- cara 4 headingny -->
+    <div class="title"> My first site</div>
+    <div>
+        <ul class="menu">
+            <li>
+                <!-- cara 1 -->
+                <a href = "#">Home</a></li>
+            <li>
+                    <a href = "#">About</a></li>
+            <li>
+                    <a href = "#">Contact</a></li>
+                    <!-- cara1 tutup -->
+        </ul>
+    </div>
+    <div class="content">
+        <h3>Home</h3>
+        <p>this is home page</p>
+    </div>
+     <div class="footer">
+         <!-- kalo begini dia naik di atas jadi diracik di class nya lagi  -->
+         Web Page made By <div class="">
+            <hr>
+        </div>
+     </div>
+</body>
+</html>
